@@ -6,15 +6,15 @@
   <title>Portfolio | Self Introduction</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="app-header">
     <nav class="nav">
       <a class="brand" href="index.html" aria-label="Portfolio home">
-        <span class="brand-mark">P</span>
-        <span>Portfolio</span>
+        <span class="brand-mark">K</span>
+        <span>Minjun Portfolio</span>
       </a>
 
       <button class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false">
@@ -31,10 +31,10 @@
   </header>
 
   <main>
-    <section class="hero section">
-      <div class="hero-copy">
-        <p class="eyebrow">Hello, I am</p>
-        <h1>김민준</h1>
+    <section class="hero poster-hero">
+      <div class="poster-copy reveal">
+        <p class="eyebrow">KIM MINJUN PORTFOLIO</p>
+        <h1>일 잘하는 개발자로<br>성장하는 김민준입니다</h1>
         <p class="lead">
           웹 기술을 배우며 성장하는 예비 개발자입니다. 깔끔한 화면, 읽기 쉬운 코드,
           그리고 사람에게 도움이 되는 서비스를 만드는 일에 관심이 있습니다.
@@ -45,34 +45,87 @@
         </div>
       </div>
 
-      <div class="profile-panel" aria-label="Profile summary">
-        <div class="avatar">ME</div>
-        <h2>Frontend Learner</h2>
-        <p>HTML, CSS, JavaScript를 중심으로 사용자 경험을 개선하는 프로젝트를 진행합니다.</p>
+      <div class="hero-visual reveal" aria-label="Portfolio visual">
+        <div class="typewriter">
+          <div class="paper">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JS</span>
+          </div>
+          <div class="roller"></div>
+          <div class="body">
+            <div class="keys">
+              <span></span><span></span><span></span><span></span><span></span>
+              <span></span><span></span><span></span><span></span><span></span>
+              <span></span><span></span><span></span><span></span><span></span>
+            </div>
+          </div>
+          <div class="spacebar"></div>
+        </div>
+        <div class="platform"></div>
       </div>
+
+      <div class="swipe-note">SCROLL -></div>
+    </section>
+
+    <section class="section intro-strip reveal">
+      <div>
+        <p class="eyebrow">Profile</p>
+        <h2>Frontend Learner</h2>
+      </div>
+      <p>
+        HTML, CSS, JavaScript를 중심으로 사용자 경험을 개선하는 프로젝트를 진행합니다.
+        기본기를 탄탄히 쌓고, 작은 기능도 보기 좋고 쓰기 쉽게 만드는 것을 목표로 합니다.
+      </p>
     </section>
 
     <section class="section about-grid">
-      <article class="info-card">
-        <span class="material-icon">school</span>
+      <article class="info-card reveal">
+        <span class="material-icon">01</span>
         <h2>Education</h2>
         <p>컴퓨터와 웹 개발의 기본기를 학습하며 작은 프로젝트를 꾸준히 완성하고 있습니다.</p>
       </article>
 
-      <article class="info-card">
-        <span class="material-icon">code</span>
+      <article class="info-card reveal">
+        <span class="material-icon">02</span>
         <h2>Skills</h2>
         <p>시맨틱 HTML, 반응형 CSS, 기본 JavaScript 상호작용, Git 사용에 익숙해지는 중입니다.</p>
       </article>
 
-      <article class="info-card">
-        <span class="material-icon">favorite</span>
+      <article class="info-card reveal">
+        <span class="material-icon">03</span>
         <h2>Interests</h2>
         <p>웹 접근성, UI 디자인, 팀 프로젝트, 문제 해결형 학습에 관심이 많습니다.</p>
       </article>
     </section>
 
-    <section class="section timeline-section">
+    <section class="section ai-survey-section reveal">
+      <div class="survey-copy">
+        <p class="eyebrow">AI Survey Service</p>
+        <h2>AI 에이전트에게 질문하기</h2>
+        <p>
+          이름, 이메일, 질문 내용을 입력하면 AI 에이전트가 내용을 분석하고 답변을 준비합니다.
+          Make.com Webhook과 연결하면 제출 내용을 자동으로 외부 워크플로우에 전달할 수 있습니다.
+        </p>
+      </div>
+
+      <form id="contactForm" class="ai-form">
+        <label for="visitorName">이름</label>
+        <input type="text" id="visitorName" placeholder="이름" required>
+
+        <label for="visitorEmail">이메일</label>
+        <input type="email" id="visitorEmail" placeholder="이메일" required>
+
+        <label for="visitorMessage">질문</label>
+        <textarea id="visitorMessage" placeholder="AI 에이전트에게 할 질문을 입력하세요" required></textarea>
+
+        <button class="button primary form-button" type="submit">AI 에이전트에게 질문하기</button>
+      </form>
+
+      <div id="responseMessage" class="response-message" role="status" aria-live="polite"></div>
+    </section>
+
+    <section class="section timeline-section reveal">
       <div class="section-heading">
         <p class="eyebrow">My Story</p>
         <h2>성장 과정</h2>
