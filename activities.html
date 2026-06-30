@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Activities</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="app-header">
+    <nav class="nav">
+      <a class="brand" href="index.html" aria-label="Portfolio home">
+        <span class="brand-mark">P</span>
+        <span>Portfolio</span>
+      </a>
+
+      <button class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-links">
+        <a href="index.html">Self Introduction</a>
+        <a class="active" href="activities.html">Activities</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-title section">
+      <p class="eyebrow">Activity List</p>
+      <h1>프로젝트와 활동</h1>
+      <p class="lead">학습, 프로젝트, 대외활동을 보기 쉽게 정리한 페이지입니다.</p>
+    </section>
+
+    <section class="section filter-bar" aria-label="Activity filters">
+      <button class="chip active" type="button" data-filter="all">All</button>
+      <button class="chip" type="button" data-filter="project">Project</button>
+      <button class="chip" type="button" data-filter="study">Study</button>
+      <button class="chip" type="button" data-filter="club">Club</button>
+    </section>
+
+    <section class="section activity-grid">
+      <article class="activity-card" data-category="project">
+        <div class="card-top">
+          <span class="tag">Project</span>
+          <span class="date">2026.05</span>
+        </div>
+        <h2>개인 포트폴리오 웹사이트</h2>
+        <p>HTML, CSS, JavaScript를 사용해 반응형 자기소개 웹사이트를 제작했습니다.</p>
+        <ul>
+          <li>모바일 메뉴 구현</li>
+          <li>Material UI 느낌의 카드 디자인</li>
+          <li>2페이지 구조 설계</li>
+        </ul>
+      </article>
+
+      <article class="activity-card" data-category="study">
+        <div class="card-top">
+          <span class="tag">Study</span>
+          <span class="date">2026.03</span>
+        </div>
+        <h2>JavaScript 기초 스터디</h2>
+        <p>DOM 조작, 이벤트 처리, 배열 메서드 등 웹 인터랙션의 기본기를 학습했습니다.</p>
+        <ul>
+          <li>버튼 클릭 이벤트</li>
+          <li>필터 기능 실습</li>
+          <li>코드 리뷰 경험</li>
+        </ul>
+      </article>
+
+      <article class="activity-card" data-category="club">
+        <div class="card-top">
+          <span class="tag">Club</span>
+          <span class="date">2025.11</span>
+        </div>
+        <h2>웹 개발 동아리 활동</h2>
+        <p>팀원들과 함께 아이디어를 정리하고 간단한 서비스 화면을 설계했습니다.</p>
+        <ul>
+          <li>팀 프로젝트 참여</li>
+          <li>와이어프레임 작성</li>
+          <li>발표 자료 준비</li>
+        </ul>
+      </article>
+
+      <article class="activity-card" data-category="project">
+        <div class="card-top">
+          <span class="tag">Project</span>
+          <span class="date">2025.09</span>
+        </div>
+        <h2>할 일 관리 웹앱</h2>
+        <p>사용자가 할 일을 추가하고 완료 표시를 할 수 있는 간단한 웹앱을 만들었습니다.</p>
+        <ul>
+          <li>입력 폼 검증</li>
+          <li>동적 리스트 렌더링</li>
+          <li>로컬 UI 상태 관리</li>
+        </ul>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 사용자 이름. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
